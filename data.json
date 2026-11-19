@@ -1,0 +1,97 @@
+{
+ "asOf": "2026-11-19",
+ "updated": "2026-11-19 22:31",
+ "accounts": [
+  {
+   "n": "yaui",
+   "solo": [
+    "DIAMOND IV",
+    68,
+    "2026-11-20"
+   ],
+   "flex": [
+    "Unranked",
+    0,
+    null
+   ]
+  },
+  {
+   "n": "bodohenn",
+   "solo": [
+    "DIAMOND III",
+    9,
+    "2026-12-01"
+   ],
+   "flex": [
+    "DIAMOND IV",
+    0,
+    "2026-12-05"
+   ]
+  },
+  {
+   "n": "waynels",
+   "solo": [
+    "EMERALD III",
+    53,
+    null
+   ],
+   "flex": [
+    "DIAMOND II",
+    34,
+    "2026-12-15"
+   ]
+  },
+  {
+   "n": "unkelwayne",
+   "solo": [
+    "EMERALD III",
+    75,
+    null
+   ],
+   "flex": [
+    "DIAMOND III",
+    0,
+    "2026-12-12"
+   ]
+  },
+  {
+   "n": "galastadt",
+   "solo": [
+    "EMERALD I",
+    71,
+    null
+   ],
+   "flex": [
+    "Unranked",
+    0,
+    null
+   ]
+  },
+  {
+   "n": "unkelwayne",
+   "solo": [
+    "Unranked",
+    0,
+    null
+   ],
+   "flex": [
+    "Unranked",
+    0,
+    null
+   ]
+  },
+  {
+   "n": "Fides Int Iterum",
+   "solo": [
+    "GOLD I",
+    5,
+    null
+   ],
+   "flex": [
+    "BRONZE I",
+    57,
+    null
+   ]
+  }
+ ]
+}
