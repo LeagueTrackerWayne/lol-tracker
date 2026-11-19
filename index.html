@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meine LoL-Rangliste</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EDF1F6;--card:#FFFFFF;--ink:#101B33;--mute:#5B6B85;--line:#D5DDE8;--track:#E3E9F1;--red:#BE123C;--amber:#B45309;--green:#0F766E;--btn:#101B33;
+--display:"Barlow Condensed","Arial Narrow",sans-serif;--body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1526;--card:#16203A;--ink:#EAF0FA;--mute:#9AA8C2;--line:#2A3857;--track:#25304D;--red:#FB7185;--amber:#FBBF24;--green:#5EEAD4;--btn:#EAF0FA}}
+:root[data-theme="dark"]{--bg:#0E1526;--card:#16203A;--ink:#EAF0FA;--mute:#9AA8C2;--line:#2A3857;--track:#25304D;--red:#FB7185;--amber:#FBBF24;--green:#5EEAD4;--btn:#EAF0FA}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--body)}
+main{max-width:1040px;margin:0 auto;padding:32px 20px 56px}
+h1{font:700 clamp(40px,7vw,64px)/.95 var(--display);margin:0 0 10px;letter-spacing:.01em}
+.lead{color:var(--mute);margin:0 0 24px;max-width:60ch}
+.summary{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:14px}
+.chip b{font:700 20px var(--display);margin-right:6px}
+.chip.red b{color:var(--red)}.chip.amber b{color:var(--amber)}.chip.green b{color:var(--green)}
+.cols,.row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:20px;align-items:center}
+.cols{padding:0 20px 8px;color:var(--mute);font-size:14px;font-weight:600}
+.row{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:10px}
+.name{font:700 26px/1 var(--display);margin:0}
+.name a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.name a:hover,.name a:focus-visible{border-color:var(--ink)}
+.rid{color:var(--mute);font-size:13px}
+.q .rank{font-weight:600}
+.q .lp{color:var(--mute);font-weight:400}
+.q .qn{display:none;color:var(--mute);font-size:13px;font-weight:600}
+.gauge{height:8px;border-radius:4px;background:var(--track);margin:7px 0 5px;overflow:hidden}
+.gauge i{display:block;height:100%;border-radius:4px;background:var(--green)}
+.red .gauge i{background:var(--red)}.amber .gauge i{background:var(--amber)}
+.days{font:700 22px/1 var(--display)}
+.red .days{color:var(--red)}.amber .days{color:var(--amber)}.green .days{color:var(--green)}
+.note{color:var(--mute);font-size:14px}
+.tier{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;background:var(--mute)}
+footer{color:var(--mute);font-size:13px;margin-top:24px;max-width:70ch}
+@media (max-width:720px){.cols{display:none}.row{grid-template-columns:1fr;gap:14px}.q .qn{display:block}}
+</style>
+</head>
+<body>
+<main>
+<h1>Meine Rangliste</h1>
+<p class="lead" id="lead"></p>
+<div class="summary" id="summary"></div>
+<div class="cols" aria-hidden="true"><span>Account</span><span>Solo/Duo</span><span>Flex</span></div>
+<div id="list"></div>
+<footer>Der Decay-Puffer ist berechnet (Diamond: 28 Tage, +7 pro Spiel; Master und höher: 14 Tage, +1 pro Spiel). Der LoL-Client ist maßgeblich. Die Seite aktualisiert sich automatisch.</footer>
+</main>
+<script>
+let DATA = [], AS_OF = "", UPDATED = "";
+const TIER_COLOR={IRON:"#78716C",BRONZE:"#B45309",SILVER:"#94A3B8",GOLD:"#CA8A04",PLATINUM:"#0D9488",EMERALD:"#059669",DIAMOND:"#2563EB",MASTER:"#9333EA",GRANDMASTER:"#DC2626",CHALLENGER:"#EAB308"};
+const RULES={DIAMOND:28,MASTER:14,GRANDMASTER:14,CHALLENGER:14};
+const cap=s=>s.charAt(0)+s.slice(1).toLowerCase();
+const daysUntil=d=>{const t=new Date();t.setHours(0,0,0,0);const [y,m,dd]=d.split("-").map(Number);return Math.round((new Date(y,m-1,dd)-t)/864e5)};
+function queue(q){
+  const [rank,lp,decay]=q, tier=rank.split(" ")[0].toUpperCase(), max=RULES[tier];
+  const out={rank,lp,tier,state:"none",days:null,max};
+  if(tier==="UNRANKED") return out;
+  if(!max){out.state="safe";return out}
+  if(!decay){out.state="missing";return out}
+  out.days=daysUntil(decay);
+  out.state=out.days<=3?"red":out.days<=7?"amber":"green";
+  return out;
+}
+function cell(label,q){
+  const el=document.createElement("div");el.className="q "+(["red","amber","green"].includes(q.state)?q.state:"");
+  let html=`<div class="qn">${label}</div>`;
+  if(q.tier==="UNRANKED"){html+=`<div class="note">Unranked</div>`}
+  else{
+    const words=q.rank.split(" ");
+    html+=`<div class="rank"><span class="tier" style="background:${TIER_COLOR[q.tier]}"></span>${cap(words[0])} ${words.slice(1).join(" ")} <span class="lp">· ${q.lp} LP</span></div>`;
+    if(q.state==="safe") html+=`<div class="note">Kein Decay unter Diamond</div>`;
+    else if(q.state==="missing") html+=`<div class="note">Verfallsdatum noch nicht eingetragen</div>`;
+    else{
+      const pct=Math.max(0,Math.min(100,q.days/q.max*100));
+      const txt=q.days<0?`Decay läuft seit ${-q.days} ${-q.days===1?"Tag":"Tagen"}`:q.days===0?"Heute":`${q.days} ${q.days===1?"Tag":"Tage"}`;
+      html+=`<div class="gauge" role="img" aria-label="${txt}"><i style="width:${pct}%"></i></div><div class="days">${txt}</div>`;
+    }
+  }
+  el.innerHTML=html;return el;
+}
+function render(){
+const rows=DATA.map(a=>({a,s:queue(a.solo),f:queue(a.flex)}));
+const urgency=r=>Math.min(...[r.s,r.f].map(q=>q.days===null?9999:q.days));
+rows.sort((x,y)=>urgency(x)-urgency(y));
+const list=document.getElementById("list");list.innerHTML="";
+rows.forEach(({a,s,f})=>{
+  const i=a.id?a.id.lastIndexOf("#"):-1;
+  const row=document.createElement("div");row.className="row";
+  const info=document.createElement("div");
+  info.innerHTML=i>0?`<p class="name"><a href="https://www.op.gg/summoners/euw/${encodeURIComponent(a.id.slice(0,i))}-${encodeURIComponent(a.id.slice(i+1))}" target="_blank" rel="noopener">${a.n}</a></p><div class="rid">${a.id}</div>`:`<p class="name">${a.n}</p>`;
+  row.append(info,cell("Solo/Duo",s),cell("Flex",f));list.append(row);
+});
+const all=rows.flatMap(r=>[r.s,r.f]);
+const n=k=>all.filter(q=>q.state===k).length, miss=n("missing");
+const chip=(c,v,l)=>`<span class="chip ${c}"><b>${v}</b>${l}</span>`;
+document.getElementById("summary").innerHTML=chip("red",n("red"),"kritisch (bis 3 Tage)")+chip("amber",n("amber"),"bald (4–7 Tage)")+chip("green",n("green"),"sicher")+(miss?chip("",miss,"ohne Datum"):"");
+const [y,m,d]=AS_OF.split("-");
+document.getElementById("lead").textContent=`${DATA.length} Accounts, zuletzt aktualisiert ${UPDATED?UPDATED.slice(8,10)+"."+UPDATED.slice(5,7)+"."+UPDATED.slice(0,4)+" um "+UPDATED.slice(11)+" Uhr":d+"."+m+"."+y}. Die Tage bis zum Decay zählt die Seite selbst herunter.`;
+}
+
+fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(s=>{DATA=s.accounts;AS_OF=s.asOf;UPDATED=s.updated||"";render()})
+.catch(()=>{document.getElementById("lead").textContent="Die Daten konnten nicht geladen werden. Bitte später erneut versuchen."});
+</script>
+</body>
+</html>
