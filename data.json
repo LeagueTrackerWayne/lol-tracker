@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-20",
- "updated": "2026-11-20 17:45",
+ "updated": "2026-11-20 18:40",
  "personen": [
   {
    "name": "Wayne",
@@ -478,18 +478,6 @@
        "a": 5,
        "win": false,
        "cs": 201,
-       "pos": "JUNGLE"
-      },
-      {
-       "t": 1794591594716,
-       "dur": 1672,
-       "q": "Solo/Duo",
-       "champ": "Zyra",
-       "k": 6,
-       "d": 9,
-       "a": 10,
-       "win": true,
-       "cs": 216,
        "pos": "JUNGLE"
       }
      ]
