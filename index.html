@@ -102,7 +102,7 @@ const n=k=>all.filter(q=>q.state===k).length, miss=n("missing");
 const chip=(c,v,l)=>`<span class="chip ${c}"><b>${v}</b>${l}</span>`;
 document.getElementById("summary").innerHTML=chip("red",n("red"),"kritisch (bis 3 Tage)")+chip("amber",n("amber"),"bald (4–7 Tage)")+chip("green",n("green"),"sicher")+(miss?chip("",miss,"ohne Datum"):"");
 const [y,m,d]=AS_OF.split("-");
-document.getElementById("lead").textContent=`${DATA.length} Accounts, Stand der Daten: ${UPDATED?UPDATED.slice(8,10)+"."+UPDATED.slice(5,7)+"."+UPDATED.slice(0,4)+", "+UPDATED.slice(11)+" Uhr":d+"."+m+"."+y}. Die Tage bis zum Decay zählt die Seite selbst herunter.`;
+document.getElementById("lead").textContent=`${DATA.length} Accounts, Zuletzt geprüft: ${UPDATED?UPDATED.slice(8,10)+"."+UPDATED.slice(5,7)+"."+UPDATED.slice(0,4)+", "+UPDATED.slice(11)+" Uhr":d+"."+m+"."+y}. Die Tage bis zum Decay zählt die Seite selbst herunter.`;
 }
 
 function load(){
