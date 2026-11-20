@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-20",
- "updated": "2026-11-20 14:15",
+ "updated": "2026-11-20 14:25",
  "personen": [
   {
    "name": "Wayne",
@@ -434,8 +434,8 @@
     {
      "n": "Fides Int Iterum",
      "solo": [
-      "GOLD I",
-      5,
+      "GOLD II",
+      95,
       null
      ],
      "flex": [
@@ -444,6 +444,18 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795181039285,
+       "dur": 1772,
+       "q": "Solo/Duo",
+       "champ": "Talon",
+       "k": 8,
+       "d": 10,
+       "a": 5,
+       "win": false,
+       "cs": 230,
+       "pos": "JUNGLE"
+      },
       {
        "t": 1794788573443,
        "dur": 1642,
