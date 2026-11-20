@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-20",
- "updated": "2026-11-20 15:30",
+ "updated": "2026-11-20 16:15",
  "personen": [
   {
    "name": "Wayne",
@@ -100,7 +100,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD III",
-      53,
+      32,
       null
      ],
      "flex": [
@@ -109,6 +109,18 @@
       "2026-12-15"
      ],
      "spiele": [
+      {
+       "t": 1795187454211,
+       "dur": 1817,
+       "q": "Solo/Duo",
+       "champ": "Naafiri",
+       "k": 7,
+       "d": 8,
+       "a": 10,
+       "win": false,
+       "cs": 204,
+       "pos": "JUNGLE"
+      },
       {
        "t": 1795184728730,
        "dur": 1805,
@@ -155,18 +167,6 @@
        "a": 5,
        "win": false,
        "cs": 134,
-       "pos": "JUNGLE"
-      },
-      {
-       "t": 1794959808030,
-       "dur": 1543,
-       "q": "Solo/Duo",
-       "champ": "Zyra",
-       "k": 8,
-       "d": 5,
-       "a": 10,
-       "win": true,
-       "cs": 215,
        "pos": "JUNGLE"
       },
       {
