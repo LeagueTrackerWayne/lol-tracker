@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-20",
- "updated": "2026-11-20 15:20",
+ "updated": "2026-11-20 15:30",
  "personen": [
   {
    "name": "Wayne",
@@ -110,6 +110,18 @@
      ],
      "spiele": [
       {
+       "t": 1795184728730,
+       "dur": 1805,
+       "q": "Solo/Duo",
+       "champ": "Naafiri",
+       "k": 15,
+       "d": 6,
+       "a": 6,
+       "win": false,
+       "cs": 216,
+       "pos": "JUNGLE"
+      },
+      {
        "t": 1795044698349,
        "dur": 1273,
        "q": "Solo/Duo",
@@ -215,18 +227,6 @@
        "a": 12,
        "win": false,
        "cs": 4,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1794710365192,
-       "dur": 1610,
-       "q": "Solo/Duo",
-       "champ": "Mel",
-       "k": 2,
-       "d": 3,
-       "a": 13,
-       "win": true,
-       "cs": 77,
        "pos": "UTILITY"
       }
      ]
