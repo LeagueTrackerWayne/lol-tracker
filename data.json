@@ -1,96 +1,254 @@
 {
+ "version": 2,
  "asOf": "2026-11-20",
- "updated": "2026-11-20 01:40",
- "accounts": [
+ "updated": "2026-11-20 02:06",
+ "personen": [
   {
-   "n": "yaui",
-   "solo": [
-    "DIAMOND IV",
-    85,
-    "2026-11-27"
+   "name": "Wayne",
+   "accounts": [
+    {
+     "n": "yaui",
+     "solo": [
+      "DIAMOND IV",
+      85,
+      "2026-11-27"
+     ],
+     "flex": [
+      "Unranked",
+      0,
+      null
+     ]
+    },
+    {
+     "n": "bodohenn",
+     "solo": [
+      "DIAMOND III",
+      9,
+      "2026-12-01"
+     ],
+     "flex": [
+      "DIAMOND IV",
+      0,
+      "2026-12-05"
+     ]
+    },
+    {
+     "n": "waynels",
+     "solo": [
+      "EMERALD III",
+      53,
+      null
+     ],
+     "flex": [
+      "DIAMOND II",
+      34,
+      "2026-12-15"
+     ]
+    },
+    {
+     "n": "unkelwayne",
+     "solo": [
+      "EMERALD III",
+      75,
+      null
+     ],
+     "flex": [
+      "DIAMOND III",
+      0,
+      "2026-12-12"
+     ]
+    },
+    {
+     "n": "galastadt",
+     "solo": [
+      "EMERALD I",
+      71,
+      null
+     ],
+     "flex": [
+      "Unranked",
+      0,
+      null
+     ]
+    },
+    {
+     "n": "unkelwayne",
+     "solo": [
+      "Unranked",
+      0,
+      null
+     ],
+     "flex": [
+      "Unranked",
+      0,
+      null
+     ]
+    },
+    {
+     "n": "Fides Int Iterum",
+     "solo": [
+      "GOLD I",
+      5,
+      null
+     ],
+     "flex": [
+      "BRONZE I",
+      57,
+      null
+     ]
+    }
    ],
-   "flex": [
-    "Unranked",
-    0,
-    null
-   ]
-  },
-  {
-   "n": "bodohenn",
-   "solo": [
-    "DIAMOND III",
-    9,
-    "2026-12-01"
-   ],
-   "flex": [
-    "DIAMOND IV",
-    0,
-    "2026-12-05"
-   ]
-  },
-  {
-   "n": "waynels",
-   "solo": [
-    "EMERALD III",
-    53,
-    null
-   ],
-   "flex": [
-    "DIAMOND II",
-    34,
-    "2026-12-15"
-   ]
-  },
-  {
-   "n": "unkelwayne",
-   "solo": [
-    "EMERALD III",
-    75,
-    null
-   ],
-   "flex": [
-    "DIAMOND III",
-    0,
-    "2026-12-12"
-   ]
-  },
-  {
-   "n": "galastadt",
-   "solo": [
-    "EMERALD I",
-    71,
-    null
-   ],
-   "flex": [
-    "Unranked",
-    0,
-    null
-   ]
-  },
-  {
-   "n": "unkelwayne",
-   "solo": [
-    "Unranked",
-    0,
-    null
-   ],
-   "flex": [
-    "Unranked",
-    0,
-    null
-   ]
-  },
-  {
-   "n": "Fides Int Iterum",
-   "solo": [
-    "GOLD I",
-    5,
-    null
-   ],
-   "flex": [
-    "BRONZE I",
-    57,
-    null
+   "spiele": [
+    {
+     "t": 1795129054033,
+     "dur": 2316,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Leona",
+     "k": 4,
+     "d": 12,
+     "a": 17,
+     "win": true,
+     "cs": 37,
+     "pos": "UTILITY",
+     "remake": false,
+     "acc": "yaui"
+    },
+    {
+     "t": 1795044698349,
+     "dur": 1273,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Talon",
+     "k": 5,
+     "d": 2,
+     "a": 6,
+     "win": true,
+     "cs": 201,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "waynels"
+    },
+    {
+     "t": 1795025175615,
+     "dur": 2020,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Kayn",
+     "k": 17,
+     "d": 11,
+     "a": 13,
+     "win": true,
+     "cs": 223,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "waynels"
+    },
+    {
+     "t": 1795015724192,
+     "dur": 1671,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Zyra",
+     "k": 2,
+     "d": 5,
+     "a": 8,
+     "win": false,
+     "cs": 196,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "galastadt"
+    },
+    {
+     "t": 1795011837583,
+     "dur": 3017,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Warwick",
+     "k": 8,
+     "d": 8,
+     "a": 11,
+     "win": true,
+     "cs": 319,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "galastadt"
+    },
+    {
+     "t": 1795006921260,
+     "dur": 1946,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Zyra",
+     "k": 4,
+     "d": 7,
+     "a": 6,
+     "win": false,
+     "cs": 264,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "galastadt"
+    },
+    {
+     "t": 1794965389960,
+     "dur": 1478,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Zyra",
+     "k": 2,
+     "d": 11,
+     "a": 5,
+     "win": false,
+     "cs": 134,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "waynels"
+    },
+    {
+     "t": 1794959808030,
+     "dur": 1543,
+     "q": "Solo/Duo",
+     "qid": 420,
+     "champ": "Zyra",
+     "k": 8,
+     "d": 5,
+     "a": 10,
+     "win": true,
+     "cs": 215,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "waynels"
+    },
+    {
+     "t": 1794955926233,
+     "dur": 1855,
+     "q": "Flex",
+     "qid": 440,
+     "champ": "Tristana",
+     "k": 7,
+     "d": 4,
+     "a": 2,
+     "win": false,
+     "cs": 257,
+     "pos": "BOTTOM",
+     "remake": false,
+     "acc": "unkelwayne"
+    },
+    {
+     "t": 1794953566006,
+     "dur": 2177,
+     "q": "Flex",
+     "qid": 440,
+     "champ": "Zyra",
+     "k": 8,
+     "d": 4,
+     "a": 14,
+     "win": true,
+     "cs": 322,
+     "pos": "JUNGLE",
+     "remake": false,
+     "acc": "unkelwayne"
+    }
    ]
   }
  ]
