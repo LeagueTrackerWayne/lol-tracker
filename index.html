@@ -15,7 +15,7 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--body)}
-main{max-width:1040px;margin:0 auto;padding:32px 20px 56px}
+main{max-width:1160px;margin:0 auto;padding:32px 20px 56px}
 h1{font:700 clamp(40px,7vw,64px)/.95 var(--display);margin:0 0 10px;letter-spacing:.01em}
 .lead{color:var(--mute);margin:0 0 24px;max-width:60ch}
 .summary{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px}
@@ -25,16 +25,16 @@ h1{font:700 clamp(40px,7vw,64px)/.95 var(--display);margin:0 0 10px;letter-spaci
 .person{margin-top:40px}
 .person h2{font:700 38px/1 var(--display);margin:0 0 4px}
 .psub{color:var(--mute);font-size:14px;margin:0 0 14px}
-.cols,.row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:20px;align-items:center}
-.cols{padding:0 20px 8px;color:var(--mute);font-size:14px;font-weight:600}
-.row{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:10px}
-.name{font:700 26px/1 var(--display);margin:0}
+.acc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px 18px;margin-bottom:14px}
+.name{font:700 28px/1 var(--display);margin:0}
 .name a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
 .name a:hover,.name a:focus-visible{border-color:var(--ink)}
 .rid{color:var(--mute);font-size:13px}
+.modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:14px}
+.mode h4{font:700 20px/1 var(--display);margin:0 0 8px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.q{min-height:62px;margin-bottom:10px}
 .q .rank{font-weight:600}
 .q .lp{color:var(--mute);font-weight:400}
-.q .qn{display:none;color:var(--mute);font-size:13px;font-weight:600}
 .gauge{height:8px;border-radius:4px;background:var(--track);margin:7px 0 5px;overflow:hidden}
 .gauge i{display:block;height:100%;border-radius:4px;background:var(--green)}
 .red .gauge i{background:var(--red)}.amber .gauge i{background:var(--amber)}
@@ -42,17 +42,16 @@ h1{font:700 clamp(40px,7vw,64px)/.95 var(--display);margin:0 0 10px;letter-spaci
 .red .days{color:var(--red)}.amber .days{color:var(--amber)}.green .days{color:var(--green)}
 .note{color:var(--mute);font-size:14px}
 .tier{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;background:var(--mute)}
-.person h3{font:700 22px/1 var(--display);margin:22px 0 10px}
-.game{display:grid;grid-template-columns:44px 1.2fr .9fr 1fr 1fr;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:10px;padding:10px 16px;margin-bottom:8px}
-.game.win{border-left-color:var(--win)}.game.loss{border-left-color:var(--loss)}
-.game img,.game .ph{width:44px;height:44px;border-radius:8px;background:var(--track)}
-.game b{display:block;font-weight:600}
-.game span{display:block;color:var(--mute);font-size:13px}
-.game .res.win b{color:var(--win)}.game .res.loss b{color:var(--loss)}
-.empty{color:var(--mute);font-size:14px}
+.g{display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:10px;align-items:center;border-left:4px solid var(--line);background:var(--bg);border-radius:8px;padding:6px 10px;margin-bottom:6px}
+.g.win{border-left-color:var(--win)}.g.loss{border-left-color:var(--loss)}
+.g img,.g .ph{width:36px;height:36px;border-radius:6px;background:var(--track)}
+.g b{display:block;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.g span{display:block;color:var(--mute);font-size:12.5px;line-height:1.3}
+.g .r{text-align:right}
+.g .r.win b{color:var(--win)}.g .r.loss b{color:var(--loss)}
+.empty{color:var(--mute);font-size:13px;margin:4px 0 0}
 footer{color:var(--mute);font-size:13px;margin-top:32px;max-width:70ch}
-@media (max-width:720px){.cols{display:none}.row{grid-template-columns:1fr;gap:14px}.q .qn{display:block}
-.game{grid-template-columns:44px 1fr 1fr;gap:8px 12px}}
+@media (max-width:820px){.modes{grid-template-columns:1fr;gap:18px}}
 </style>
 </head>
 <body>
@@ -61,17 +60,19 @@ footer{color:var(--mute);font-size:13px;margin-top:32px;max-width:70ch}
 <p class="lead" id="lead">Daten werden geladen …</p>
 <div class="summary" id="summary"></div>
 <div id="list"></div>
-<footer>Der Decay-Puffer ist berechnet (Diamond: 28 Tage, +7 pro Spiel; Master und höher: 14 Tage, +1 pro Spiel). Der LoL-Client ist maßgeblich. Die Seite aktualisiert sich automatisch.</footer>
+<footer>Gezeigt werden Ranked-Spiele der letzten 7 Tage (bis zu 5 je Modus und Account). Der Decay-Puffer ist berechnet (Diamond: 28 Tage, +7 pro Spiel; Master und höher: 14 Tage, +1 pro Spiel). Der LoL-Client ist maßgeblich. Die Seite aktualisiert sich automatisch.</footer>
 </main>
 <script>
 let PERSONEN = [], UPDATED = "", AS_OF = "", VER = "";
+const MODI=[["solo","Solo/Duo"],["flex","Flex"],["fuenf","5er-Rangliste"]];
+const MAX_PRO_MODUS=5, TAGE=7;
 const TIER_COLOR={IRON:"#78716C",BRONZE:"#B45309",SILVER:"#94A3B8",GOLD:"#CA8A04",PLATINUM:"#0D9488",EMERALD:"#059669",DIAMOND:"#2563EB",MASTER:"#9333EA",GRANDMASTER:"#DC2626",CHALLENGER:"#EAB308"};
 const RULES={DIAMOND:28,MASTER:14,GRANDMASTER:14,CHALLENGER:14};
-const POS={TOP:"Top",JUNGLE:"Jungle",MIDDLE:"Mid",BOTTOM:"Bot",UTILITY:"Support"};
 const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const cap=s=>s.charAt(0)+s.slice(1).toLowerCase();
 const daysUntil=d=>{const t=new Date();t.setHours(0,0,0,0);const [y,m,dd]=d.split("-").map(Number);return Math.round((new Date(y,m-1,dd)-t)/864e5)};
 function queue(q){
+  if(!q) return {tier:"NONE",state:"none",days:null};
   const [rank,lp,decay]=q, tier=rank.split(" ")[0].toUpperCase(), max=RULES[tier];
   const out={rank,lp,tier,state:"none",days:null,max};
   if(tier==="UNRANKED") return out;
@@ -81,62 +82,67 @@ function queue(q){
   out.state=out.days<=3?"red":out.days<=7?"amber":"green";
   return out;
 }
-function cell(label,q){
+function rankCell(q,modus){
   const el=document.createElement("div");el.className="q "+(["red","amber","green"].includes(q.state)?q.state:"");
-  let html=`<div class="qn">${label}</div>`;
-  if(q.tier==="UNRANKED"){html+=`<div class="note">Unranked</div>`}
+  if(q.tier==="NONE"){el.innerHTML=`<div class="note">Keine Rangdaten</div>`;return el}
+  if(q.tier==="UNRANKED"){el.innerHTML=`<div class="note">Unranked</div>`;return el}
+  const words=q.rank.split(" ");
+  let html=`<div class="rank"><span class="tier" style="background:${TIER_COLOR[q.tier]||"#78716C"}"></span>${esc(cap(words[0]))} ${esc(words.slice(1).join(" "))} <span class="lp">· ${esc(q.lp)} LP</span></div>`;
+  if(q.state==="safe") html+=`<div class="note">Kein Decay unter Diamond</div>`;
+  else if(q.state==="missing") html+=`<div class="note">${modus==="fuenf"?"Kein Verfallsdatum eingetragen":"Verfallsdatum noch nicht berechnet"}</div>`;
   else{
-    const words=q.rank.split(" ");
-    html+=`<div class="rank"><span class="tier" style="background:${TIER_COLOR[q.tier]||"#78716C"}"></span>${esc(cap(words[0]))} ${esc(words.slice(1).join(" "))} <span class="lp">· ${esc(q.lp)} LP</span></div>`;
-    if(q.state==="safe") html+=`<div class="note">Kein Decay unter Diamond</div>`;
-    else if(q.state==="missing") html+=`<div class="note">Verfallsdatum noch nicht berechnet</div>`;
-    else{
-      const pct=Math.max(0,Math.min(100,q.days/q.max*100));
-      const txt=q.days<0?`Decay läuft seit ${-q.days} ${-q.days===1?"Tag":"Tagen"}`:q.days===0?"Heute":`${q.days} ${q.days===1?"Tag":"Tage"}`;
-      html+=`<div class="gauge" role="img" aria-label="${txt}"><i style="width:${pct}%"></i></div><div class="days">${txt}</div>`;
-    }
+    const pct=Math.max(0,Math.min(100,q.days/q.max*100));
+    const txt=q.days<0?`Decay läuft seit ${-q.days} ${-q.days===1?"Tag":"Tagen"}`:q.days===0?"Heute":`${q.days} ${q.days===1?"Tag":"Tage"}`;
+    html+=`<div class="gauge" role="img" aria-label="${txt}"><i style="width:${pct}%"></i></div><div class="days">${txt}</div>`;
   }
   el.innerHTML=html;return el;
 }
-const urgency=r=>Math.min(...[r.s,r.f].map(q=>q.days===null?9999:q.days));
-function accountRow({a,s,f}){
-  const row=document.createElement("div");row.className="row";
-  const info=document.createElement("div");
-  const i=a.id?a.id.lastIndexOf("#"):-1;
-  info.innerHTML=i>0?`<p class="name"><a href="https://www.op.gg/summoners/euw/${encodeURIComponent(a.id.slice(0,i))}-${encodeURIComponent(a.id.slice(i+1))}" target="_blank" rel="noopener">${esc(a.n)}</a></p><div class="rid">${esc(a.id)}</div>`:`<p class="name">${esc(a.n)}</p>`;
-  row.append(info,cell("Solo/Duo",s),cell("Flex",f));return row;
-}
+const urgency=r=>Math.min(...r.q.map(q=>q.days===null?9999:q.days));
 function ago(t){
   const m=Math.max(0,Math.round((Date.now()-t)/60000));
   if(m<60) return `vor ${m} Min.`;
   const h=Math.round(m/60); if(h<48) return `vor ${h} Std.`;
-  const d=Math.round(h/24); return `vor ${d} Tagen`;
+  return `vor ${Math.round(h/24)} Tagen`;
 }
 function gameRow(g){
-  const el=document.createElement("div");el.className="game "+(g.win?"win":"loss");
-  const kda=g.d===0?"Perfect":((g.k+g.a)/g.d).toFixed(2);
+  const el=document.createElement("div");el.className="g "+(g.win?"win":"loss");
   const mm=Math.floor(g.dur/60), ss=String(g.dur%60).padStart(2,"0");
   const icon=VER?`<img src="https://ddragon.leagueoflegends.com/cdn/${esc(VER)}/img/champion/${encodeURIComponent(g.champ)}.png" alt="" loading="lazy" onerror="this.outerHTML='<div class=&quot;ph&quot;></div>'">`:`<div class="ph"></div>`;
-  el.innerHTML=`${icon}<div><b>${esc(g.champ)}</b><span>${esc(g.q)}${g.pos&&POS[g.pos]?" · "+POS[g.pos]:""}</span></div>
-  <div><b>${g.k} / ${g.d} / ${g.a}</b><span>${kda} KDA</span></div>
-  <div class="res ${g.win?"win":"loss"}"><b>${g.win?"Sieg":"Niederlage"}</b><span>${mm}:${ss} · ${g.cs} CS</span></div>
-  <div><b>${esc(g.acc)}</b><span>${ago(g.t)}</span></div>`;
+  el.innerHTML=`${icon}<div><b>${esc(g.champ)}</b><span>${g.k}/${g.d}/${g.a} · ${mm}:${ss} · ${g.cs} CS</span></div><div class="r ${g.win?"win":"loss"}"><b>${g.win?"Sieg":"Niederlage"}</b><span>${ago(g.t)}</span></div>`;
   return el;
+}
+function accountCard(a){
+  const card=document.createElement("article");card.className="acc";
+  const i=a.id?a.id.lastIndexOf("#"):-1;
+  const head=document.createElement("div");
+  head.innerHTML=i>0?`<p class="name"><a href="https://www.op.gg/summoners/euw/${encodeURIComponent(a.id.slice(0,i))}-${encodeURIComponent(a.id.slice(i+1))}" target="_blank" rel="noopener">${esc(a.n)}</a></p><div class="rid">${esc(a.id)}</div>`:`<p class="name">${esc(a.n)}</p>`;
+  card.append(head);
+  const grid=document.createElement("div");grid.className="modes";
+  const grenze=Date.now()-TAGE*864e5;
+  const qs=[];
+  MODI.forEach(([k,label])=>{
+    const q=queue(a[k]);qs.push(q);
+    const col=document.createElement("section");col.className="mode";
+    const h=document.createElement("h4");h.textContent=label;col.append(h,rankCell(q,k));
+    const games=(a.spiele||[]).filter(g=>g.q===label&&g.t>=grenze).sort((x,y)=>y.t-x.t).slice(0,MAX_PRO_MODUS);
+    if(games.length) games.forEach(g=>col.append(gameRow(g)));
+    else{const e=document.createElement("p");e.className="empty";e.textContent="Keine Spiele in den letzten 7 Tagen.";col.append(e)}
+    grid.append(col);
+  });
+  card.append(grid);
+  return {card,q:qs};
 }
 function render(){
   const root=document.getElementById("list");root.innerHTML="";
   const all=[];
   PERSONEN.forEach(p=>{
-    const rows=p.accounts.map(a=>({a,s:queue(a.solo),f:queue(a.flex)})).sort((x,y)=>urgency(x)-urgency(y));
-    rows.forEach(r=>all.push(r.s,r.f));
+    const rows=p.accounts.map(a=>({a,...accountCard(a)})).sort((x,y)=>urgency(x)-urgency(y));
+    rows.forEach(r=>all.push(...r.q));
     const sec=document.createElement("section");sec.className="person";
     const best=rows[0]&&urgency(rows[0])<9999?urgency(rows[0]):null;
     const sub=`${p.accounts.length} ${p.accounts.length===1?"Account":"Accounts"}`+(best===null?"":best<0?" · Decay läuft bereits":` · nächster Decay in ${best} ${best===1?"Tag":"Tagen"}`);
-    sec.innerHTML=`<h2>${esc(p.name)}</h2><p class="psub">${sub}</p><div class="cols" aria-hidden="true"><span>Account</span><span>Solo/Duo</span><span>Flex</span></div>`;
-    rows.forEach(r=>sec.append(accountRow(r)));
-    const h=document.createElement("h3");h.textContent="Letzte Ranked-Spiele";sec.append(h);
-    if(p.spiele&&p.spiele.length) p.spiele.forEach(g=>sec.append(gameRow(g)));
-    else{const e=document.createElement("p");e.className="empty";e.textContent="Noch keine Ranked-Spiele geladen.";sec.append(e)}
+    sec.innerHTML=`<h2>${esc(p.name)}</h2><p class="psub">${sub}</p>`;
+    rows.forEach(r=>sec.append(r.card));
     root.append(sec);
   });
   const n=k=>all.filter(q=>q.state===k).length, miss=n("missing");
@@ -148,7 +154,7 @@ function render(){
 }
 function load(){
   fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(s=>{
-    PERSONEN=s.personen||[{name:"Accounts",accounts:s.accounts||[],spiele:[]}];
+    PERSONEN=s.personen||[{name:"Accounts",accounts:s.accounts||[]}];
     AS_OF=s.asOf||"";UPDATED=s.updated||"";render();
   }).catch(()=>{if(!PERSONEN.length)document.getElementById("lead").textContent="Die Daten konnten nicht geladen werden. Bitte später erneut versuchen."});
 }
