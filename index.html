@@ -102,11 +102,14 @@ const n=k=>all.filter(q=>q.state===k).length, miss=n("missing");
 const chip=(c,v,l)=>`<span class="chip ${c}"><b>${v}</b>${l}</span>`;
 document.getElementById("summary").innerHTML=chip("red",n("red"),"kritisch (bis 3 Tage)")+chip("amber",n("amber"),"bald (4–7 Tage)")+chip("green",n("green"),"sicher")+(miss?chip("",miss,"ohne Datum"):"");
 const [y,m,d]=AS_OF.split("-");
-document.getElementById("lead").textContent=`${DATA.length} Accounts, zuletzt aktualisiert ${UPDATED?UPDATED.slice(8,10)+"."+UPDATED.slice(5,7)+"."+UPDATED.slice(0,4)+" um "+UPDATED.slice(11)+" Uhr":d+"."+m+"."+y}. Die Tage bis zum Decay zählt die Seite selbst herunter.`;
+document.getElementById("lead").textContent=`${DATA.length} Accounts, Stand der Daten: ${UPDATED?UPDATED.slice(8,10)+"."+UPDATED.slice(5,7)+"."+UPDATED.slice(0,4)+", "+UPDATED.slice(11)+" Uhr":d+"."+m+"."+y}. Die Tage bis zum Decay zählt die Seite selbst herunter.`;
 }
 
-fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(s=>{DATA=s.accounts;AS_OF=s.asOf;UPDATED=s.updated||"";render()})
-.catch(()=>{document.getElementById("lead").textContent="Die Daten konnten nicht geladen werden. Bitte später erneut versuchen."});
+function load(){
+  fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(s=>{DATA=s.accounts;AS_OF=s.asOf;UPDATED=s.updated||"";render()})
+  .catch(()=>{if(!DATA.length)document.getElementById("lead").textContent="Die Daten konnten nicht geladen werden. Bitte später erneut versuchen."});
+}
+load();setInterval(load,300000);
 </script>
 </body>
 </html>
