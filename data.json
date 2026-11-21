@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 18:05",
+ "updated": "2026-11-21 18:50",
  "personen": [
   {
    "name": "Wayne",
@@ -58,7 +58,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD III",
-      70,
+      89,
       null
      ],
      "flex": [
@@ -67,6 +67,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795283361703,
+       "dur": 2353,
+       "q": "Solo/Duo",
+       "champ": "Syndra",
+       "k": 18,
+       "d": 3,
+       "a": 16,
+       "win": true,
+       "cs": 325,
+       "pos": "MIDDLE",
+       "lp": 19
+      },
       {
        "t": 1795280364529,
        "dur": 1743,
@@ -226,18 +239,6 @@
        "a": 6,
        "win": false,
        "cs": 216,
-       "pos": "JUNGLE"
-      },
-      {
-       "t": 1795044698349,
-       "dur": 1273,
-       "q": "Solo/Duo",
-       "champ": "Talon",
-       "k": 5,
-       "d": 2,
-       "a": 6,
-       "win": true,
-       "cs": 201,
        "pos": "JUNGLE"
       }
      ],
