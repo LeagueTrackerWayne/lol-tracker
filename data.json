@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 13:40",
+ "updated": "2026-11-21 13:45",
  "personen": [
   {
    "name": "Wayne",
@@ -543,18 +543,6 @@
        "win": false,
        "cs": 66,
        "pos": "UTILITY"
-      },
-      {
-       "t": 1794660082562,
-       "dur": 1625,
-       "q": "Solo/Duo",
-       "champ": "Hecarim",
-       "k": 7,
-       "d": 10,
-       "a": 5,
-       "win": false,
-       "cs": 201,
-       "pos": "JUNGLE"
       }
      ],
      "id": "Fides Int Iterum#VULT"
