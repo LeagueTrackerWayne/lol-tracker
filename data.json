@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 15:00",
+ "updated": "2026-11-21 15:20",
  "personen": [
   {
    "name": "Wayne",
@@ -272,18 +272,6 @@
        "a": 4,
        "win": false,
        "cs": 46,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1794772382263,
-       "dur": 1826,
-       "q": "Flex",
-       "champ": "Lulu",
-       "k": 1,
-       "d": 3,
-       "a": 28,
-       "win": true,
-       "cs": 26,
        "pos": "UTILITY"
       }
      ],
