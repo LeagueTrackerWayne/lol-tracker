@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 00:55",
+ "updated": "2026-11-21 01:15",
  "personen": [
   {
    "name": "Wayne",
@@ -31,7 +31,8 @@
        "cs": 37,
        "pos": "UTILITY"
       }
-     ]
+     ],
+     "id": "yaui#lol"
     },
     {
      "n": "bodohenn",
@@ -94,7 +95,13 @@
        "cs": 195,
        "pos": "BOTTOM"
       }
-     ]
+     ],
+     "fuenf": [
+      "DIAMOND IV",
+      0,
+      null
+     ],
+     "id": "bodohenn#euw"
     },
     {
      "n": "waynels",
@@ -277,7 +284,13 @@
        "cs": 22,
        "pos": "UTILITY"
       }
-     ]
+     ],
+     "fuenf": [
+      "DIAMOND IV",
+      26,
+      null
+     ],
+     "id": "waynels#lol"
     },
     {
      "n": "unkelwayne",
@@ -388,7 +401,8 @@
        "cs": 24,
        "pos": "UTILITY"
       }
-     ]
+     ],
+     "id": "unkelwayne#TÜV"
     },
     {
      "n": "galastadt",
@@ -463,7 +477,8 @@
        "cs": 226,
        "pos": "JUNGLE"
       }
-     ]
+     ],
+     "id": "galastadt#euw"
     },
     {
      "n": "unkelwayne",
@@ -477,7 +492,8 @@
       0,
       null
      ],
-     "spiele": []
+     "spiele": [],
+     "id": "unkelwayne#lol"
     },
     {
      "n": "Fides Int Iterum",
@@ -540,7 +556,8 @@
        "cs": 201,
        "pos": "JUNGLE"
       }
-     ]
+     ],
+     "id": "Fides Int Iterum#VULT"
     }
    ]
   }
