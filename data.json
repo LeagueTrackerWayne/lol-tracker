@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 14:05",
+ "updated": "2026-11-21 14:50",
  "personen": [
   {
    "name": "Wayne",
@@ -81,18 +81,6 @@
        "a": 13,
        "win": true,
        "cs": 210,
-       "pos": "BOTTOM"
-      },
-      {
-       "t": 1794663976516,
-       "dur": 1742,
-       "q": "Flex",
-       "champ": "Ezreal",
-       "k": 6,
-       "d": 9,
-       "a": 12,
-       "win": false,
-       "cs": 195,
        "pos": "BOTTOM"
       }
      ],
