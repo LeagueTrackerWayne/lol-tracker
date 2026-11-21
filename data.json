@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 15:55",
+ "updated": "2026-11-21 16:00",
  "personen": [
   {
    "name": "Wayne",
@@ -58,18 +58,6 @@
        "win": false,
        "cs": 50,
        "pos": "UTILITY"
-      },
-      {
-       "t": 1794668239957,
-       "dur": 1289,
-       "q": "Flex",
-       "champ": "Vladimir",
-       "k": 1,
-       "d": 5,
-       "a": 2,
-       "win": false,
-       "cs": 195,
-       "pos": "TOP"
       }
      ],
      "fuenf": [
