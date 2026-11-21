@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 16:00",
+ "updated": "2026-11-21 16:35",
  "personen": [
   {
    "name": "Wayne",
@@ -76,10 +76,23 @@
      ],
      "flex": [
       "DIAMOND II",
-      63,
+      46,
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795275291629,
+       "dur": 1523,
+       "q": "Flex",
+       "champ": "Lulu",
+       "k": 2,
+       "d": 5,
+       "a": 5,
+       "win": false,
+       "cs": 19,
+       "pos": "UTILITY",
+       "lp": -17
+      },
       {
        "t": 1795272798034,
        "dur": 1811,
@@ -237,18 +250,6 @@
        "a": 13,
        "win": true,
        "cs": 223,
-       "pos": "JUNGLE"
-      },
-      {
-       "t": 1794950945499,
-       "dur": 2006,
-       "q": "Flex",
-       "champ": "Shen",
-       "k": 3,
-       "d": 11,
-       "a": 12,
-       "win": false,
-       "cs": 164,
        "pos": "JUNGLE"
       }
      ],
