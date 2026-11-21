@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 15:20",
+ "updated": "2026-11-21 15:25",
  "personen": [
   {
    "name": "Wayne",
@@ -70,18 +70,6 @@
        "win": false,
        "cs": 195,
        "pos": "TOP"
-      },
-      {
-       "t": 1794666070165,
-       "dur": 1799,
-       "q": "Flex",
-       "champ": "Hwei",
-       "k": 5,
-       "d": 6,
-       "a": 13,
-       "win": true,
-       "cs": 210,
-       "pos": "BOTTOM"
       }
      ],
      "fuenf": [
