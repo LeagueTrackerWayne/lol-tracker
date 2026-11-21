@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 14:50",
+ "updated": "2026-11-21 15:00",
  "personen": [
   {
    "name": "Wayne",
@@ -100,10 +100,23 @@
      ],
      "flex": [
       "DIAMOND II",
-      57,
+      80,
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795269439719,
+       "dur": 2468,
+       "q": "Flex",
+       "champ": "Shen",
+       "k": 7,
+       "d": 8,
+       "a": 35,
+       "win": true,
+       "cs": 50,
+       "pos": "UTILITY",
+       "lp": 23
+      },
       {
        "t": 1795266226974,
        "dur": 2490,
@@ -271,18 +284,6 @@
        "a": 28,
        "win": true,
        "cs": 26,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1794763611131,
-       "dur": 1742,
-       "q": "Flex",
-       "champ": "Nami",
-       "k": 1,
-       "d": 6,
-       "a": 19,
-       "win": true,
-       "cs": 22,
        "pos": "UTILITY"
       }
      ],
