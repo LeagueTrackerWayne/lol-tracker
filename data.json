@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 15:25",
+ "updated": "2026-11-21 15:55",
  "personen": [
   {
    "name": "Wayne",
@@ -88,10 +88,23 @@
      ],
      "flex": [
       "DIAMOND II",
-      80,
+      63,
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795272798034,
+       "dur": 1811,
+       "q": "Flex",
+       "champ": "Nami",
+       "k": 5,
+       "d": 7,
+       "a": 11,
+       "win": false,
+       "cs": 31,
+       "pos": "UTILITY",
+       "lp": -17
+      },
       {
        "t": 1795269439719,
        "dur": 2468,
@@ -249,18 +262,6 @@
        "win": false,
        "cs": 164,
        "pos": "JUNGLE"
-      },
-      {
-       "t": 1794774521913,
-       "dur": 1606,
-       "q": "Flex",
-       "champ": "Morgana",
-       "k": 6,
-       "d": 10,
-       "a": 4,
-       "win": false,
-       "cs": 46,
-       "pos": "UTILITY"
       }
      ],
      "fuenf": [
