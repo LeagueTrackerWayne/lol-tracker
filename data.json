@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-21",
- "updated": "2026-11-21 18:00",
+ "updated": "2026-11-21 18:05",
  "personen": [
   {
    "name": "Wayne",
@@ -46,20 +46,7 @@
       0,
       "2026-12-05"
      ],
-     "spiele": [
-      {
-       "t": 1794675668335,
-       "dur": 2314,
-       "q": "Solo/Duo",
-       "champ": "Janna",
-       "k": 3,
-       "d": 12,
-       "a": 16,
-       "win": false,
-       "cs": 50,
-       "pos": "UTILITY"
-      }
-     ],
+     "spiele": [],
      "fuenf": [
       "DIAMOND IV",
       0,
