@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-22",
- "updated": "2026-11-22 16:10",
+ "updated": "2026-11-22 16:50",
  "personen": [
   {
    "name": "Wayne",
@@ -19,6 +19,18 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795362373494,
+       "dur": 1609,
+       "q": "Flex",
+       "champ": "Mel",
+       "k": 6,
+       "d": 10,
+       "a": 1,
+       "win": false,
+       "cs": 58,
+       "pos": "UTILITY"
+      },
       {
        "t": 1795360033247,
        "dur": 1635,
