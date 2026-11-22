@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-22",
- "updated": "2026-11-22 17:45",
+ "updated": "2026-11-22 18:00",
  "personen": [
   {
    "name": "Wayne",
@@ -94,7 +94,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD III",
-      89,
+      68,
       null
      ],
      "flex": [
@@ -103,6 +103,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795366696206,
+       "dur": 1635,
+       "q": "Solo/Duo",
+       "champ": "Zed",
+       "k": 8,
+       "d": 7,
+       "a": 3,
+       "win": false,
+       "cs": 201,
+       "pos": "MIDDLE",
+       "lp": -21
+      },
       {
        "t": 1795283361703,
        "dur": 2353,
@@ -263,18 +276,6 @@
        "a": 10,
        "win": false,
        "cs": 204,
-       "pos": "JUNGLE"
-      },
-      {
-       "t": 1795184728730,
-       "dur": 1805,
-       "q": "Solo/Duo",
-       "champ": "Naafiri",
-       "k": 15,
-       "d": 6,
-       "a": 6,
-       "win": false,
-       "cs": 216,
        "pos": "JUNGLE"
       }
      ],
