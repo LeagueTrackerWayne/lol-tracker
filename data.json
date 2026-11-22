@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-22",
- "updated": "2026-11-22 19:55",
+ "updated": "2026-11-22 20:20",
  "personen": [
   {
    "name": "Wayne",
@@ -371,18 +371,6 @@
        "a": 12,
        "win": false,
        "cs": 87,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1794770168553,
-       "dur": 1600,
-       "q": "Flex",
-       "champ": "Mel",
-       "k": 2,
-       "d": 3,
-       "a": 4,
-       "win": true,
-       "cs": 24,
        "pos": "UTILITY"
       }
      ],
