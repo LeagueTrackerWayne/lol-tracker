@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-22",
- "updated": "2026-11-22 14:32",
+ "updated": "2026-11-22 15:30",
  "personen": [
   {
    "name": "Wayne",
@@ -19,6 +19,18 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795357532788,
+       "dur": 2090,
+       "q": "Flex",
+       "champ": "Yasuo",
+       "k": 5,
+       "d": 10,
+       "a": 7,
+       "win": false,
+       "cs": 334,
+       "pos": "MIDDLE"
+      },
       {
        "t": 1795129054033,
        "dur": 2316,
