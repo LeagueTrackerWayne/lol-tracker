@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-22",
- "updated": "2026-11-22 19:15",
+ "updated": "2026-11-22 19:55",
  "personen": [
   {
    "name": "Wayne",
@@ -94,7 +94,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD III",
-      66,
+      85,
       null
      ],
      "flex": [
@@ -103,6 +103,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795373601307,
+       "dur": 2086,
+       "q": "Solo/Duo",
+       "champ": "Mel",
+       "k": 21,
+       "d": 9,
+       "a": 7,
+       "win": true,
+       "cs": 274,
+       "pos": "BOTTOM",
+       "lp": 19
+      },
       {
        "t": 1795371034130,
        "dur": 1652,
@@ -152,19 +165,6 @@
        "a": 16,
        "win": true,
        "cs": 325,
-       "pos": "MIDDLE",
-       "lp": 19
-      },
-      {
-       "t": 1795280364529,
-       "dur": 1743,
-       "q": "Solo/Duo",
-       "champ": "Zed",
-       "k": 6,
-       "d": 5,
-       "a": 4,
-       "win": true,
-       "cs": 212,
        "pos": "MIDDLE",
        "lp": 19
       },
@@ -266,18 +266,6 @@
        "a": 17,
        "win": true,
        "cs": 20,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1795209255215,
-       "dur": 1923,
-       "q": "5er-Rangliste",
-       "champ": "Karma",
-       "k": 0,
-       "d": 3,
-       "a": 12,
-       "win": false,
-       "cs": 59,
        "pos": "UTILITY"
       }
      ],
