@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 14:30",
+ "updated": "2026-11-23 15:05",
  "personen": [
   {
    "name": "Wayne",
@@ -335,18 +335,6 @@
        "a": 4,
        "win": true,
        "cs": 101,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1794837795767,
-       "dur": 1627,
-       "q": "Solo/Duo",
-       "champ": "Mel",
-       "k": 5,
-       "d": 6,
-       "a": 10,
-       "win": true,
-       "cs": 86,
        "pos": "UTILITY"
       }
      ],
