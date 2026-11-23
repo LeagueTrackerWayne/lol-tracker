@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 22:15",
+ "updated": "2026-11-23 22:55",
  "personen": [
   {
    "name": "Wayne",
@@ -93,8 +93,8 @@
     {
      "n": "waynels",
      "solo": [
-      "EMERALD II",
-      1,
+      "EMERALD III",
+      80,
       null
      ],
      "flex": [
@@ -103,6 +103,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795470730975,
+       "dur": 2055,
+       "q": "Solo/Duo",
+       "champ": "Zyra",
+       "k": 7,
+       "d": 8,
+       "a": 22,
+       "win": false,
+       "cs": 249,
+       "pos": "JUNGLE",
+       "wechsel": true
+      },
       {
        "t": 1795464906241,
        "dur": 1449,
@@ -154,19 +167,6 @@
        "cs": 266,
        "pos": "JUNGLE",
        "lp": 19
-      },
-      {
-       "t": 1795434802752,
-       "dur": 1594,
-       "q": "Solo/Duo",
-       "champ": "Zyra",
-       "k": 8,
-       "d": 4,
-       "a": 11,
-       "win": true,
-       "cs": 236,
-       "pos": "JUNGLE",
-       "wechsel": true
       },
       {
        "t": 1795275291629,
