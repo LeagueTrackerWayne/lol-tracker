@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 18:30",
+ "updated": "2026-11-23 18:45",
  "personen": [
   {
    "name": "Wayne",
@@ -94,7 +94,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD II",
-      4,
+      23,
       null
      ],
      "flex": [
@@ -103,6 +103,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795455813630,
+       "dur": 1796,
+       "q": "Solo/Duo",
+       "champ": "Zyra",
+       "k": 6,
+       "d": 5,
+       "a": 13,
+       "win": true,
+       "cs": 266,
+       "pos": "JUNGLE",
+       "lp": 19
+      },
       {
        "t": 1795434802752,
        "dur": 1594,
@@ -153,19 +166,6 @@
        "win": false,
        "cs": 172,
        "pos": "JUNGLE",
-       "lp": -21
-      },
-      {
-       "t": 1795366696206,
-       "dur": 1635,
-       "q": "Solo/Duo",
-       "champ": "Zed",
-       "k": 8,
-       "d": 7,
-       "a": 3,
-       "win": false,
-       "cs": 201,
-       "pos": "MIDDLE",
        "lp": -21
       },
       {
@@ -243,18 +243,6 @@
        "win": true,
        "cs": 34,
        "pos": "UTILITY"
-      },
-      {
-       "t": 1795214460602,
-       "dur": 1611,
-       "q": "5er-Rangliste",
-       "champ": "Nautilus",
-       "k": 3,
-       "d": 4,
-       "a": 19,
-       "win": true,
-       "cs": 21,
-       "pos": "UTILITY"
       }
      ],
      "fuenf": [
@@ -300,18 +288,6 @@
        "win": true,
        "cs": 322,
        "pos": "JUNGLE"
-      },
-      {
-       "t": 1794850974678,
-       "dur": 2391,
-       "q": "Solo/Duo",
-       "champ": "Mel",
-       "k": 15,
-       "d": 11,
-       "a": 3,
-       "win": false,
-       "cs": 139,
-       "pos": "UTILITY"
       }
      ],
      "id": "unkelwayne#TÜV"
