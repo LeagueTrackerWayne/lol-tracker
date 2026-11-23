@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 15:45",
+ "updated": "2026-11-23 16:10",
  "personen": [
   {
    "name": "Wayne",
@@ -423,7 +423,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD II",
-      95,
+      85,
       null
      ],
      "flex": [
@@ -432,6 +432,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795446312090,
+       "dur": 1953,
+       "q": "Solo/Duo",
+       "champ": "Zyra",
+       "k": 7,
+       "d": 9,
+       "a": 9,
+       "win": false,
+       "cs": 259,
+       "pos": "JUNGLE",
+       "lp": -10
+      },
       {
        "t": 1795200771973,
        "dur": 1976,
