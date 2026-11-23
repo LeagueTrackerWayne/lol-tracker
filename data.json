@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 00:55",
+ "updated": "2026-11-23 01:25",
  "personen": [
   {
    "name": "Wayne",
@@ -503,18 +503,6 @@
        "win": false,
        "cs": 230,
        "pos": "JUNGLE"
-      },
-      {
-       "t": 1794788573443,
-       "dur": 1642,
-       "q": "Solo/Duo",
-       "champ": "Leblanc",
-       "k": 7,
-       "d": 13,
-       "a": 6,
-       "win": false,
-       "cs": 66,
-       "pos": "UTILITY"
       }
      ],
      "id": "Fides Int Iterum#VULT"
