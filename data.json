@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 16:10",
+ "updated": "2026-11-23 16:50",
  "personen": [
   {
    "name": "Wayne",
@@ -423,7 +423,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD II",
-      85,
+      75,
       null
      ],
      "flex": [
@@ -432,6 +432,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795448864067,
+       "dur": 1485,
+       "q": "Solo/Duo",
+       "champ": "Rengar",
+       "k": 5,
+       "d": 10,
+       "a": 5,
+       "win": false,
+       "cs": 150,
+       "pos": "JUNGLE",
+       "lp": -10
+      },
       {
        "t": 1795446312090,
        "dur": 1953,
