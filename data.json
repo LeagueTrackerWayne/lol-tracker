@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-23",
- "updated": "2026-11-23 16:50",
+ "updated": "2026-11-23 17:25",
  "personen": [
   {
    "name": "Wayne",
@@ -423,7 +423,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD II",
-      75,
+      65,
       null
      ],
      "flex": [
@@ -432,6 +432,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795451042620,
+       "dur": 1676,
+       "q": "Solo/Duo",
+       "champ": "Ezreal",
+       "k": 8,
+       "d": 14,
+       "a": 2,
+       "win": false,
+       "cs": 149,
+       "pos": "MIDDLE",
+       "lp": -10
+      },
       {
        "t": 1795448864067,
        "dur": 1485,
