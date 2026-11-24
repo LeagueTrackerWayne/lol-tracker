@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-24",
- "updated": "2026-11-24 18:20",
+ "updated": "2026-11-24 18:35",
  "personen": [
   {
    "name": "Wayne",
@@ -316,18 +316,6 @@
        "win": false,
        "cs": 264,
        "pos": "JUNGLE"
-      },
-      {
-       "t": 1794936770262,
-       "dur": 2297,
-       "q": "Solo/Duo",
-       "champ": "Poppy",
-       "k": 7,
-       "d": 11,
-       "a": 21,
-       "win": true,
-       "cs": 57,
-       "pos": "UTILITY"
       }
      ],
      "id": "galastadt#euw"
