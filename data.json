@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-24",
- "updated": "2026-11-24 23:15",
+ "updated": "2026-11-24 23:55",
  "personen": [
   {
    "name": "Wayne",
@@ -240,20 +240,7 @@
       0,
       "2026-12-12"
      ],
-     "spiele": [
-      {
-       "t": 1794955926233,
-       "dur": 1855,
-       "q": "Flex",
-       "champ": "Tristana",
-       "k": 7,
-       "d": 4,
-       "a": 2,
-       "win": false,
-       "cs": 257,
-       "pos": "BOTTOM"
-      }
-     ],
+     "spiele": [],
      "id": "unkelwayne#TÜV"
     },
     {
