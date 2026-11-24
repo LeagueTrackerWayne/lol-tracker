@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-24",
- "updated": "2026-11-24 19:50",
+ "updated": "2026-11-24 20:00",
  "personen": [
   {
    "name": "Wayne",
@@ -94,7 +94,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD II",
-      18,
+      38,
       null
      ],
      "flex": [
@@ -103,6 +103,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795546713003,
+       "dur": 2072,
+       "q": "Solo/Duo",
+       "champ": "Janna",
+       "k": 3,
+       "d": 7,
+       "a": 29,
+       "win": true,
+       "cs": 47,
+       "pos": "UTILITY",
+       "lp": 20
+      },
       {
        "t": 1795542730333,
        "dur": 1778,
@@ -154,19 +167,6 @@
        "cs": 258,
        "pos": "JUNGLE",
        "lp": 19
-      },
-      {
-       "t": 1795470730975,
-       "dur": 2055,
-       "q": "Solo/Duo",
-       "champ": "Zyra",
-       "k": 7,
-       "d": 8,
-       "a": 22,
-       "win": false,
-       "cs": 249,
-       "pos": "JUNGLE",
-       "wechsel": true
       },
       {
        "t": 1795275291629,
