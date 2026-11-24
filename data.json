@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-24",
- "updated": "2026-11-24 23:10",
+ "updated": "2026-11-24 23:15",
  "personen": [
   {
    "name": "Wayne",
@@ -252,18 +252,6 @@
        "win": false,
        "cs": 257,
        "pos": "BOTTOM"
-      },
-      {
-       "t": 1794953566006,
-       "dur": 2177,
-       "q": "Flex",
-       "champ": "Zyra",
-       "k": 8,
-       "d": 4,
-       "a": 14,
-       "win": true,
-       "cs": 322,
-       "pos": "JUNGLE"
       }
      ],
      "id": "unkelwayne#TÜV"
