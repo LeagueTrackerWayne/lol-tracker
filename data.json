@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 21:30",
+ "updated": "2026-11-25 21:50",
  "personen": [
   {
    "name": "Wayne",
@@ -113,7 +113,8 @@
        "a": 5,
        "win": false,
        "cs": 253,
-       "pos": "JUNGLE"
+       "pos": "JUNGLE",
+       "lp": 0
       },
       {
        "t": 1795636208386,
