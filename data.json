@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 12:49",
+ "updated": "2026-11-25 13:35",
  "personen": [
   {
    "name": "Wayne",
@@ -314,7 +314,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD I",
-      54,
+      43,
       null
      ],
      "flex": [
@@ -323,6 +323,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795610007836,
+       "dur": 1886,
+       "q": "Solo/Duo",
+       "champ": "Kayle",
+       "k": 2,
+       "d": 12,
+       "a": 5,
+       "win": false,
+       "cs": 220,
+       "pos": "MIDDLE",
+       "lp": -11
+      },
       {
        "t": 1795573678797,
        "dur": 2526,
@@ -373,19 +386,6 @@
        "win": false,
        "cs": 149,
        "pos": "MIDDLE",
-       "lp": -10
-      },
-      {
-       "t": 1795448864067,
-       "dur": 1485,
-       "q": "Solo/Duo",
-       "champ": "Rengar",
-       "k": 5,
-       "d": 10,
-       "a": 5,
-       "win": false,
-       "cs": 150,
-       "pos": "JUNGLE",
        "lp": -10
       },
       {
