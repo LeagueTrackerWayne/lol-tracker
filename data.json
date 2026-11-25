@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 15:25",
+ "updated": "2026-11-25 15:35",
  "personen": [
   {
    "name": "Wayne",
@@ -94,7 +94,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD II",
-      55,
+      35,
       null
      ],
      "flex": [
@@ -103,6 +103,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795617186988,
+       "dur": 1678,
+       "q": "Solo/Duo",
+       "champ": "Mel",
+       "k": 5,
+       "d": 10,
+       "a": 7,
+       "win": false,
+       "cs": 83,
+       "pos": "UTILITY",
+       "lp": -20
+      },
       {
        "t": 1795614259983,
        "dur": 1400,
@@ -154,19 +167,6 @@
        "cs": 39,
        "pos": "UTILITY",
        "lp": -21
-      },
-      {
-       "t": 1795558207472,
-       "dur": 1436,
-       "q": "Solo/Duo",
-       "champ": "Janna",
-       "k": 4,
-       "d": 4,
-       "a": 17,
-       "win": true,
-       "cs": 30,
-       "pos": "UTILITY",
-       "lp": 20
       },
       {
        "t": 1795275291629,
