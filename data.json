@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 01:58",
+ "updated": "2026-11-25 02:45",
  "personen": [
   {
    "name": "Wayne",
@@ -313,8 +313,8 @@
     {
      "n": "Fides Int Iterum",
      "solo": [
-      "GOLD II",
-      94,
+      "GOLD I",
+      24,
       null
      ],
      "flex": [
@@ -323,6 +323,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795570855852,
+       "dur": 1450,
+       "q": "Solo/Duo",
+       "champ": "Khazix",
+       "k": 5,
+       "d": 2,
+       "a": 7,
+       "win": true,
+       "cs": 198,
+       "pos": "JUNGLE",
+       "wechsel": true
+      },
       {
        "t": 1795476447589,
        "dur": 1798,
@@ -386,18 +399,6 @@
        "win": true,
        "cs": 208,
        "pos": "TOP"
-      },
-      {
-       "t": 1795181039285,
-       "dur": 1772,
-       "q": "Solo/Duo",
-       "champ": "Talon",
-       "k": 8,
-       "d": 10,
-       "a": 5,
-       "win": false,
-       "cs": 230,
-       "pos": "JUNGLE"
       }
      ],
      "id": "Fides Int Iterum#VULT"
