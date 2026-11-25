@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 14:45",
+ "updated": "2026-11-25 15:25",
  "personen": [
   {
    "name": "Wayne",
@@ -266,18 +266,6 @@
        "a": 8,
        "win": false,
        "cs": 196,
-       "pos": "JUNGLE"
-      },
-      {
-       "t": 1795011837583,
-       "dur": 3017,
-       "q": "Solo/Duo",
-       "champ": "Warwick",
-       "k": 8,
-       "d": 8,
-       "a": 11,
-       "win": true,
-       "cs": 319,
        "pos": "JUNGLE"
       }
      ],
