@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 20:50",
+ "updated": "2026-11-25 21:30",
  "personen": [
   {
    "name": "Wayne",
@@ -104,6 +104,18 @@
      ],
      "spiele": [
       {
+       "t": 1795638518302,
+       "dur": 1794,
+       "q": "Solo/Duo",
+       "champ": "Zyra",
+       "k": 5,
+       "d": 7,
+       "a": 5,
+       "win": false,
+       "cs": 253,
+       "pos": "JUNGLE"
+      },
+      {
        "t": 1795636208386,
        "dur": 2329,
        "q": "Solo/Duo",
@@ -154,19 +166,6 @@
        "cs": 83,
        "pos": "UTILITY",
        "lp": -20
-      },
-      {
-       "t": 1795614259983,
-       "dur": 1400,
-       "q": "Solo/Duo",
-       "champ": "Janna",
-       "k": 2,
-       "d": 2,
-       "a": 16,
-       "win": true,
-       "cs": 26,
-       "pos": "UTILITY",
-       "lp": 20
       },
       {
        "t": 1795275291629,
