@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 02:45",
+ "updated": "2026-11-25 03:30",
  "personen": [
   {
    "name": "Wayne",
@@ -314,7 +314,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD I",
-      24,
+      54,
       null
      ],
      "flex": [
@@ -323,6 +323,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795573678797,
+       "dur": 2526,
+       "q": "Solo/Duo",
+       "champ": "Heimerdinger",
+       "k": 6,
+       "d": 4,
+       "a": 16,
+       "win": true,
+       "cs": 272,
+       "pos": "JUNGLE",
+       "lp": 30
+      },
       {
        "t": 1795570855852,
        "dur": 1450,
@@ -372,19 +385,6 @@
        "a": 5,
        "win": false,
        "cs": 150,
-       "pos": "JUNGLE",
-       "lp": -10
-      },
-      {
-       "t": 1795446312090,
-       "dur": 1953,
-       "q": "Solo/Duo",
-       "champ": "Zyra",
-       "k": 7,
-       "d": 9,
-       "a": 9,
-       "win": false,
-       "cs": 259,
        "pos": "JUNGLE",
        "lp": -10
       },
