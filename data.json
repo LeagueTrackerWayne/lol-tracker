@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-25",
- "updated": "2026-11-25 16:05",
+ "updated": "2026-11-25 16:30",
  "personen": [
   {
    "name": "Wayne",
@@ -255,20 +255,7 @@
       0,
       null
      ],
-     "spiele": [
-      {
-       "t": 1795015724192,
-       "dur": 1671,
-       "q": "Solo/Duo",
-       "champ": "Zyra",
-       "k": 2,
-       "d": 5,
-       "a": 8,
-       "win": false,
-       "cs": 196,
-       "pos": "JUNGLE"
-      }
-     ],
+     "spiele": [],
      "id": "galastadt#euw"
     },
     {
