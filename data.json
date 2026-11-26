@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-26",
- "updated": "2026-11-26 13:05",
+ "updated": "2026-11-26 13:55",
  "personen": [
   {
    "name": "Wayne",
@@ -9,9 +9,9 @@
     {
      "n": "yaui",
      "solo": [
-      "DIAMOND IV",
-      85,
-      "2026-11-27"
+      "DIAMOND III",
+      2,
+      "2026-12-04"
      ],
      "flex": [
       "Unranked",
@@ -19,6 +19,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795697564588,
+       "dur": 1721,
+       "q": "Solo/Duo",
+       "champ": "Nami",
+       "k": 2,
+       "d": 7,
+       "a": 20,
+       "win": true,
+       "cs": 22,
+       "pos": "UTILITY",
+       "wechsel": true
+      },
       {
        "t": 1795362373494,
        "dur": 1609,
