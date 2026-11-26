@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-26",
- "updated": "2026-11-26 22:25",
+ "updated": "2026-11-26 23:10",
  "personen": [
   {
    "name": "Wayne",
@@ -19,6 +19,18 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795730934286,
+       "dur": 1345,
+       "q": "Flex",
+       "champ": "Belveth",
+       "k": 7,
+       "d": 0,
+       "a": 2,
+       "win": true,
+       "cs": 201,
+       "pos": "JUNGLE"
+      },
       {
        "t": 1795697564588,
        "dur": 1721,
