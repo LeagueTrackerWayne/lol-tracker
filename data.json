@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 00:00",
+ "updated": "2026-11-27 00:15",
  "personen": [
   {
    "name": "Wayne",
@@ -15,10 +15,23 @@
      ],
      "flex": [
       "EMERALD I",
-      10,
+      40,
       null
      ],
      "spiele": [
+      {
+       "t": 1795734717513,
+       "dur": 1392,
+       "q": "Flex",
+       "champ": "Nocturne",
+       "k": 4,
+       "d": 4,
+       "a": 11,
+       "win": true,
+       "cs": 162,
+       "pos": "JUNGLE",
+       "lp": 30
+      },
       {
        "t": 1795733035141,
        "dur": 1706,
@@ -79,18 +92,6 @@
        "win": false,
        "cs": 23,
        "pos": "UTILITY"
-      },
-      {
-       "t": 1795357532788,
-       "dur": 2090,
-       "q": "Flex",
-       "champ": "Yasuo",
-       "k": 5,
-       "d": 10,
-       "a": 7,
-       "win": false,
-       "cs": 334,
-       "pos": "MIDDLE"
       }
      ],
      "id": "yaui#lol"
