@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-26",
- "updated": "2026-11-26 23:10",
+ "updated": "2026-11-26 23:45",
  "personen": [
   {
    "name": "Wayne",
@@ -14,11 +14,23 @@
       "2026-12-04"
      ],
      "flex": [
-      "Unranked",
-      0,
+      "EMERALD I",
+      10,
       null
      ],
      "spiele": [
+      {
+       "t": 1795733035141,
+       "dur": 1706,
+       "q": "Flex",
+       "champ": "JarvanIV",
+       "k": 6,
+       "d": 3,
+       "a": 21,
+       "win": true,
+       "cs": 172,
+       "pos": "JUNGLE"
+      },
       {
        "t": 1795730934286,
        "dur": 1345,
