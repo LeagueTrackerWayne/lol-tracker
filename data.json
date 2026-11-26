@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-26",
- "updated": "2026-11-26 08:25",
+ "updated": "2026-11-26 08:30",
  "personen": [
   {
    "name": "Wayne",
@@ -299,6 +299,99 @@
      ],
      "spiele": [],
      "id": "unkelwayne#lol"
+    },
+    {
+     "n": "Fides Int Iterum",
+     "solo": [
+      "GOLD I",
+      43,
+      null
+     ],
+     "flex": [
+      "BRONZE I",
+      87,
+      null
+     ],
+     "spiele": [
+      {
+       "t": 1795610007836,
+       "dur": 1886,
+       "q": "Solo/Duo",
+       "champ": "Kayle",
+       "k": 2,
+       "d": 12,
+       "a": 5,
+       "win": false,
+       "cs": 220,
+       "pos": "MIDDLE",
+       "lp": -11
+      },
+      {
+       "t": 1795573678797,
+       "dur": 2526,
+       "q": "Solo/Duo",
+       "champ": "Heimerdinger",
+       "k": 6,
+       "d": 4,
+       "a": 16,
+       "win": true,
+       "cs": 272,
+       "pos": "JUNGLE",
+       "lp": 30
+      },
+      {
+       "t": 1795570855852,
+       "dur": 1450,
+       "q": "Solo/Duo",
+       "champ": "Khazix",
+       "k": 5,
+       "d": 2,
+       "a": 7,
+       "win": true,
+       "cs": 198,
+       "pos": "JUNGLE",
+       "wechsel": true
+      },
+      {
+       "t": 1795476447589,
+       "dur": 1798,
+       "q": "Solo/Duo",
+       "champ": "Vladimir",
+       "k": 6,
+       "d": 9,
+       "a": 5,
+       "win": true,
+       "cs": 215,
+       "pos": "MIDDLE",
+       "lp": 29
+      },
+      {
+       "t": 1795451042620,
+       "dur": 1676,
+       "q": "Solo/Duo",
+       "champ": "Ezreal",
+       "k": 8,
+       "d": 14,
+       "a": 2,
+       "win": false,
+       "cs": 149,
+       "pos": "MIDDLE",
+       "lp": -10
+      },
+      {
+       "t": 1795200771973,
+       "dur": 1976,
+       "q": "Flex",
+       "champ": "Yone",
+       "k": 2,
+       "d": 15,
+       "a": 4,
+       "win": true,
+       "cs": 208,
+       "pos": "TOP"
+      }
+     ],
+     "id": "Fides Int Iterum#VULT"
     }
    ]
   }
