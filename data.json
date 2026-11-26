@@ -1,7 +1,7 @@
 {
  "version": 3,
- "asOf": "2026-11-26",
- "updated": "2026-11-26 23:45",
+ "asOf": "2026-11-27",
+ "updated": "2026-11-27 00:00",
  "personen": [
   {
    "name": "Wayne",
@@ -91,18 +91,6 @@
        "win": false,
        "cs": 334,
        "pos": "MIDDLE"
-      },
-      {
-       "t": 1795129054033,
-       "dur": 2316,
-       "q": "Solo/Duo",
-       "champ": "Leona",
-       "k": 4,
-       "d": 12,
-       "a": 17,
-       "win": true,
-       "cs": 37,
-       "pos": "UTILITY"
       }
      ],
      "id": "yaui#lol"
