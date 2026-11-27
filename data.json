@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 23:25",
+ "updated": "2026-11-27 23:50",
  "personen": [
   {
    "name": "Wayne",
@@ -121,7 +121,7 @@
      "n": "waynels",
      "solo": [
       "EMERALD II",
-      64,
+      83,
       null
      ],
      "flex": [
@@ -130,6 +130,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795819531348,
+       "dur": 1039,
+       "q": "Solo/Duo",
+       "champ": "Lulu",
+       "k": 1,
+       "d": 5,
+       "a": 11,
+       "win": true,
+       "cs": 26,
+       "pos": "UTILITY",
+       "lp": 19
+      },
       {
        "t": 1795814757852,
        "dur": 1406,
@@ -205,19 +218,6 @@
        "a": 3,
        "win": true,
        "cs": 237,
-       "pos": "JUNGLE",
-       "lp": 19
-      },
-      {
-       "t": 1795725590832,
-       "dur": 1753,
-       "q": "Solo/Duo",
-       "champ": "Nocturne",
-       "k": 9,
-       "d": 7,
-       "a": 14,
-       "win": true,
-       "cs": 210,
        "pos": "JUNGLE",
        "lp": 19
       },
