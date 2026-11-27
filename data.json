@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 15:35",
+ "updated": "2026-11-27 15:45",
  "personen": [
   {
    "name": "Wayne",
@@ -300,7 +300,7 @@
      "n": "galastadt",
      "solo": [
       "EMERALD I",
-      71,
+      90,
       null
      ],
      "flex": [
@@ -308,7 +308,21 @@
       0,
       null
      ],
-     "spiele": [],
+     "spiele": [
+      {
+       "t": 1795790639981,
+       "dur": 1433,
+       "q": "Solo/Duo",
+       "champ": "Nocturne",
+       "k": 15,
+       "d": 3,
+       "a": 6,
+       "win": true,
+       "cs": 183,
+       "pos": "JUNGLE",
+       "lp": 19
+      }
+     ],
      "id": "galastadt#euw"
     },
     {
