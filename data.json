@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 21:45",
+ "updated": "2026-11-27 22:30",
  "personen": [
   {
    "name": "Wayne",
@@ -130,6 +130,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795814757852,
+       "dur": 1406,
+       "q": "5er-Rangliste",
+       "champ": "Udyr",
+       "k": 3,
+       "d": 4,
+       "a": 10,
+       "win": true,
+       "cs": 149,
+       "pos": "JUNGLE",
+       "wechsel": true
+      },
       {
        "t": 1795812058227,
        "dur": 1956,
@@ -262,8 +275,8 @@
       }
      ],
      "fuenf": [
-      "DIAMOND IV",
-      89,
+      "DIAMOND III",
+      53,
       null
      ],
      "id": "waynels#lol"
