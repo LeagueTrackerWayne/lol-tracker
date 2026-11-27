@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 18:30",
+ "updated": "2026-11-27 19:10",
  "personen": [
   {
    "name": "Wayne",
@@ -15,10 +15,23 @@
      ],
      "flex": [
       "EMERALD I",
-      40,
+      70,
       null
      ],
      "spiele": [
+      {
+       "t": 1795802736500,
+       "dur": 2450,
+       "q": "Flex",
+       "champ": "Lillia",
+       "k": 7,
+       "d": 10,
+       "a": 16,
+       "win": true,
+       "cs": 274,
+       "pos": "JUNGLE",
+       "lp": 30
+      },
       {
        "t": 1795734717513,
        "dur": 1392,
@@ -79,18 +92,6 @@
        "a": 1,
        "win": false,
        "cs": 58,
-       "pos": "UTILITY"
-      },
-      {
-       "t": 1795360033247,
-       "dur": 1635,
-       "q": "Flex",
-       "champ": "Nautilus",
-       "k": 3,
-       "d": 7,
-       "a": 13,
-       "win": false,
-       "cs": 23,
        "pos": "UTILITY"
       }
      ],
