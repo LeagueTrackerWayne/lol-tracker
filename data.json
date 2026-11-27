@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 19:10",
+ "updated": "2026-11-27 19:55",
  "personen": [
   {
    "name": "Wayne",
@@ -418,18 +418,6 @@
        "cs": 149,
        "pos": "MIDDLE",
        "lp": -10
-      },
-      {
-       "t": 1795200771973,
-       "dur": 1976,
-       "q": "Flex",
-       "champ": "Yone",
-       "k": 2,
-       "d": 15,
-       "a": 4,
-       "win": true,
-       "cs": 208,
-       "pos": "TOP"
       }
      ],
      "id": "Fides Int Iterum#VULT"
