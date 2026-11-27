@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-27",
- "updated": "2026-11-27 20:50",
+ "updated": "2026-11-27 21:45",
  "personen": [
   {
    "name": "Wayne",
@@ -131,6 +131,19 @@
      ],
      "spiele": [
       {
+       "t": 1795812058227,
+       "dur": 1956,
+       "q": "5er-Rangliste",
+       "champ": "Chogath",
+       "k": 7,
+       "d": 3,
+       "a": 6,
+       "win": true,
+       "cs": 239,
+       "pos": "JUNGLE",
+       "lp": 63
+      },
+      {
        "t": 1795786607034,
        "dur": 1815,
        "q": "Solo/Duo",
@@ -250,7 +263,7 @@
      ],
      "fuenf": [
       "DIAMOND IV",
-      26,
+      89,
       null
      ],
      "id": "waynels#lol"
