@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 15:00",
+ "updated": "2026-11-28 15:55",
  "personen": [
   {
    "name": "Wayne",
@@ -231,19 +231,6 @@
        "a": 5,
        "win": false,
        "cs": 19,
-       "pos": "UTILITY",
-       "lp": -17
-      },
-      {
-       "t": 1795272798034,
-       "dur": 1811,
-       "q": "Flex",
-       "champ": "Nami",
-       "k": 5,
-       "d": 7,
-       "a": 11,
-       "win": false,
-       "cs": 31,
        "pos": "UTILITY",
        "lp": -17
       }
