@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 16:00",
+ "updated": "2026-11-28 16:35",
  "personen": [
   {
    "name": "Wayne",
@@ -220,19 +220,6 @@
        "cs": 194,
        "pos": "JUNGLE",
        "lp": -21
-      },
-      {
-       "t": 1795275291629,
-       "dur": 1523,
-       "q": "Flex",
-       "champ": "Lulu",
-       "k": 2,
-       "d": 5,
-       "a": 5,
-       "win": false,
-       "cs": 19,
-       "pos": "UTILITY",
-       "lp": -17
       }
      ],
      "fuenf": [
