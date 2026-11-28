@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 12:50",
+ "updated": "2026-11-28 13:35",
  "personen": [
   {
    "name": "Wayne",
@@ -120,8 +120,8 @@
     {
      "n": "waynels",
      "solo": [
-      "EMERALD II",
-      83,
+      "EMERALD I",
+      2,
       null
      ],
      "flex": [
@@ -130,6 +130,19 @@
       "2026-12-19"
      ],
      "spiele": [
+      {
+       "t": 1795869194960,
+       "dur": 1614,
+       "q": "Solo/Duo",
+       "champ": "Vi",
+       "k": 14,
+       "d": 5,
+       "a": 7,
+       "win": true,
+       "cs": 194,
+       "pos": "JUNGLE",
+       "wechsel": true
+      },
       {
        "t": 1795819531348,
        "dur": 1039,
@@ -207,19 +220,6 @@
        "cs": 194,
        "pos": "JUNGLE",
        "lp": -21
-      },
-      {
-       "t": 1795728174995,
-       "dur": 1955,
-       "q": "Solo/Duo",
-       "champ": "Belveth",
-       "k": 10,
-       "d": 6,
-       "a": 3,
-       "win": true,
-       "cs": 237,
-       "pos": "JUNGLE",
-       "lp": 19
       },
       {
        "t": 1795275291629,
