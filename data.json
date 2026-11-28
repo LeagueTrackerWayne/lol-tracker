@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 14:05",
+ "updated": "2026-11-28 15:00",
  "personen": [
   {
    "name": "Wayne",
@@ -246,19 +246,6 @@
        "cs": 31,
        "pos": "UTILITY",
        "lp": -17
-      },
-      {
-       "t": 1795269439719,
-       "dur": 2468,
-       "q": "Flex",
-       "champ": "Shen",
-       "k": 7,
-       "d": 8,
-       "a": 35,
-       "win": true,
-       "cs": 50,
-       "pos": "UTILITY",
-       "lp": 23
       }
      ],
      "fuenf": [
@@ -358,7 +345,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD I",
-      43,
+      32,
       null
      ],
      "flex": [
@@ -367,6 +354,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795874201324,
+       "dur": 1908,
+       "q": "Solo/Duo",
+       "champ": "AurelionSol",
+       "k": 6,
+       "d": 12,
+       "a": 9,
+       "win": false,
+       "cs": 204,
+       "pos": "BOTTOM",
+       "lp": -11
+      },
       {
        "t": 1795610007836,
        "dur": 1886,
@@ -418,19 +418,6 @@
        "cs": 215,
        "pos": "MIDDLE",
        "lp": 29
-      },
-      {
-       "t": 1795451042620,
-       "dur": 1676,
-       "q": "Solo/Duo",
-       "champ": "Ezreal",
-       "k": 8,
-       "d": 14,
-       "a": 2,
-       "win": false,
-       "cs": 149,
-       "pos": "MIDDLE",
-       "lp": -10
       }
      ],
      "id": "Fides Int Iterum#VULT"
