@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 15:55",
+ "updated": "2026-11-28 16:00",
  "personen": [
   {
    "name": "Wayne",
@@ -332,7 +332,7 @@
      "n": "Fides Int Iterum",
      "solo": [
       "GOLD I",
-      32,
+      20,
       null
      ],
      "flex": [
@@ -341,6 +341,19 @@
       null
      ],
      "spiele": [
+      {
+       "t": 1795877731178,
+       "dur": 3129,
+       "q": "Solo/Duo",
+       "champ": "Vladimir",
+       "k": 8,
+       "d": 15,
+       "a": 14,
+       "win": false,
+       "cs": 317,
+       "pos": "BOTTOM",
+       "lp": -12
+      },
       {
        "t": 1795874201324,
        "dur": 1908,
@@ -392,19 +405,6 @@
        "cs": 198,
        "pos": "JUNGLE",
        "wechsel": true
-      },
-      {
-       "t": 1795476447589,
-       "dur": 1798,
-       "q": "Solo/Duo",
-       "champ": "Vladimir",
-       "k": 6,
-       "d": 9,
-       "a": 5,
-       "win": true,
-       "cs": 215,
-       "pos": "MIDDLE",
-       "lp": 29
       }
      ],
      "id": "Fides Int Iterum#VULT"
