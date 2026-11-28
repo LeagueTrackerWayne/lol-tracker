@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 17:15",
+ "updated": "2026-11-28 18:00",
  "personen": [
   {
    "name": "Wayne",
@@ -233,7 +233,7 @@
      "n": "unkelwayne",
      "solo": [
       "EMERALD II",
-      15,
+      41,
       null
      ],
      "flex": [
@@ -242,6 +242,19 @@
       "2026-12-12"
      ],
      "spiele": [
+      {
+       "t": 1795885130447,
+       "dur": 1927,
+       "q": "Solo/Duo",
+       "champ": "Mel",
+       "k": 10,
+       "d": 3,
+       "a": 15,
+       "win": true,
+       "cs": 100,
+       "pos": "UTILITY",
+       "lp": 26
+      },
       {
        "t": 1795882448657,
        "dur": 991,
