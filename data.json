@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 18:55",
+ "updated": "2026-11-28 19:35",
  "personen": [
   {
    "name": "Wayne",
@@ -233,7 +233,7 @@
      "n": "unkelwayne",
      "solo": [
       "EMERALD II",
-      27,
+      53,
       null
      ],
      "flex": [
@@ -242,6 +242,19 @@
       "2026-12-12"
      ],
      "spiele": [
+      {
+       "t": 1795890708829,
+       "dur": 2061,
+       "q": "Solo/Duo",
+       "champ": "Mel",
+       "k": 4,
+       "d": 6,
+       "a": 6,
+       "win": true,
+       "cs": 100,
+       "pos": "UTILITY",
+       "lp": 26
+      },
       {
        "t": 1795888302690,
        "dur": 2315,
@@ -293,19 +306,6 @@
        "cs": 260,
        "pos": "BOTTOM",
        "lp": 27
-      },
-      {
-       "t": 1795646956582,
-       "dur": 1995,
-       "q": "Solo/Duo",
-       "champ": "Mel",
-       "k": 9,
-       "d": 6,
-       "a": 15,
-       "win": true,
-       "cs": 86,
-       "pos": "UTILITY",
-       "wechsel": true
       }
      ],
      "id": "unkelwayne#TÜV"
