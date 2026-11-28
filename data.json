@@ -1,7 +1,7 @@
 {
  "version": 3,
  "asOf": "2026-11-28",
- "updated": "2026-11-28 13:35",
+ "updated": "2026-11-28 14:05",
  "personen": [
   {
    "name": "Wayne",
@@ -257,19 +257,6 @@
        "a": 35,
        "win": true,
        "cs": 50,
-       "pos": "UTILITY",
-       "lp": 23
-      },
-      {
-       "t": 1795266226974,
-       "dur": 2490,
-       "q": "Flex",
-       "champ": "Velkoz",
-       "k": 7,
-       "d": 8,
-       "a": 21,
-       "win": true,
-       "cs": 92,
        "pos": "UTILITY",
        "lp": 23
       }
